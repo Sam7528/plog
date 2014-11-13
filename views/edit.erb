@@ -1,0 +1,7 @@
+<form action="/update/<%= @log.id %>" method="post">
+				<input type="text" value=<%= @log.auteur %> name="auteur">
+				<input type="text" value=<%= @log.contenu %> name="log">
+				<div class="button">
+        			<button type="submit">Modifier votre log</button>
+        		</div>
+			</form>

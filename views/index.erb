@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+	<header>
+			<h1>PLOG</h1>
+			<form action="/new" method="post">
+				<input type="text" placeholder="Auteur" name="auteur">
+				<input type="text" placeholder="Mon Nouveau Log" name="log">
+				<div class="button">
+        			<button type="submit">Envoyer votre log</button>
+        		</div>
+			</form>
+			<ul>liste des logs:
+				<% @logs.each do |log| %>
+					<li>
+						<%= log.auteur %>&nbsp;<%= log.contenu %>
+						<a href="/edit/<%= log.id %>">Modifier</a>
+						<a href="/delete/<%= log.id %>">Supprimer</a>
+					</li>
+				<% end %>
+			</ul>
+			
+		</header>

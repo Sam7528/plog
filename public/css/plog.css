@@ -1,0 +1,12 @@
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	font-family: impact;
+}
+input {
+	float:left;
+	margin-left: 5px;
+}
+ul {
+	float:left;
+}
